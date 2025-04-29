@@ -10,6 +10,11 @@ def build_table(data):
     # Létrehozza a főablakot (root = fő GUI ablak)
     root = tk.Tk()
 
+    # Fejléc színezése
+    style = ttk.Style(root)
+    style.theme_use("default")
+    style.configure("Treeview.Heading", background="#444", foreground="white", font=("Arial", 10, "bold"))
+
     # Létrehoz egy keretet (frame) a főablakon belül
     frame = ttk.Frame(root)
 
@@ -58,6 +63,8 @@ def build_table(data):
 
 # Excel fájl beolvasása
 df = pd.read_excel('files/SampleData.xlsx')
+#df['OrderDate'] = pd.to_datetime(df['OrderDate']).dt.date
+df['OrderDate'] = df['OrderDate'].dt.date
 
 # megjelenítés tkinter segítségével
 build_table(df)
