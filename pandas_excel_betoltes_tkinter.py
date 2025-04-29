@@ -1,6 +1,9 @@
 
 #Pandas excel betöltés
 # https://colab.research.google.com/drive/1jm-EFvKUAdwZmWSfhD7hC-Lc2KlUhYcS?usp=sharing
+# https://github.com/minorharpman/pandaspublic/
+
+#Tkinter documentation: https://docs.python.org/3/library/tkinter.html#a-hello-world-program
 
 import pandas as pd
 import tkinter as tk
