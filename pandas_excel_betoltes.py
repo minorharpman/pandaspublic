@@ -1,6 +1,10 @@
 # https://colab.research.google.com/drive/1jm-EFvKUAdwZmWSfhD7hC-Lc2KlUhYcS?usp=sharing
 # https://github.com/minorharpman/pandaspublic/
 
+# csomagok telepítése, parancsok a Terminálban
+# pip install pandas
+# pip install openpyxl
+
 
 import pandas as pd
 
@@ -8,8 +12,8 @@ import pandas as pd
 df = pd.read_excel('files/SampleData.xlsx')
 
 #print(df.head())
-#print(df)
-print(df['OrderDate'])
+print(df)
+#print(df['OrderDate'])
 
 
 #bejárások
